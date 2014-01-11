@@ -8,3 +8,7 @@ make clean && make -j3 recoveryimage
 3. clean
 make clobber
 
+
+需要修改cm10.1/bionic/libc/kernel/common/linux/fb.h和内核源码kernel/include/linux/fb.h一致
+__u32 colorspace;
+__u32 reserved[4];	-->	__u32 reserved[5];
