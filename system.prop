@@ -1,0 +1,5 @@
+#
+# system.prop for ef39s
+#
+
+ro.qualcomm.cabl=1
