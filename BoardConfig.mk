@@ -87,7 +87,7 @@ TW_TOUCH_VIBRATOR := true
 #TW_CUSTOM_BATTERY_PATH := "/sys/class/power_supply/batterys"
 
 #enables touch event logging to help debug touchscreen issues (don't leave this on for a release - it will fill up your logfile very quickly)
-TWRP_EVENT_LOGGING := true
+#TWRP_EVENT_LOGGING := true
 HAVE_SELINUX := false
 
 #RECOVERY_TOUCHSCREEN_SWAP_XY := true
