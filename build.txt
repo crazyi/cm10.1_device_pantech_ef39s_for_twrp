@@ -8,7 +8,14 @@ make clean && make -j3 recoveryimage
 3. clean
 make clobber
 
+4. bug fix
 
 需要修改cm10.1/bionic/libc/kernel/common/linux/fb.h和内核源码kernel/include/linux/fb.h一致
 __u32 colorspace;
 __u32 reserved[4];	-->	__u32 reserved[5];
+
+
+如果报错：MODULE.TARGET.STATIC_LIBRARIES.libfuse already defined by bootable/recovery/fuse
+将/bootable/recovery/fuse中的Android.mk中的：
+include $(BUILD_STATIC_LIBRARY)		-->	#include $(BUILD_STATIC_LIBRARY)
+#include $(BUILD_SHARED_LIBRARY)	-->	include $(BUILD_SHARED_LIBRARY)
