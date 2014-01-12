@@ -76,7 +76,7 @@ RECOVERY_GRAPHICS_USE_LINELENGTH :=true
 TW_INCLUDE_JB_CRYPTO := true
 
 TW_BRIGHTNESS_PATH := "/sys/devices/platform/msm_fb.524545/leds/lcd-backlight/brightness"
-TW_MAX_BRIGHTNESS := 28
+TW_MAX_BRIGHTNESS := 50
 SP1_NAME := "info"
 SP1_BACKUP_METHOD := image
 SP1_MOUNTABLE := 0
